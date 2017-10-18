@@ -13,7 +13,7 @@ function initMap() {
           map: map
          }); 
 
-  marker1.addListener('click', alertonclick);
+  marker1.addListener('click', alertonclick1);
         
  	  var uvic2 = {lat:48.4636, lng:-123.3119};
     var marker2 = new google.maps.Marker({
@@ -21,7 +21,7 @@ function initMap() {
           map: map
           
         }); 
-  marker2.addListener('click', alertonclick);      
+  marker2.addListener('click', alertonclick2);      
         
     var uvic3 = {lat:48.4636, lng:-123.3120};
     var marker3 = new google.maps.Marker({
@@ -29,12 +29,24 @@ function initMap() {
           map: map
 
         }); 
-   marker3.addListener('click', alertonclick);   
+   marker3.addListener('click', alertonclick3);   
  
       }
 
-function alertonclick () {
-  alert("welcome to uvic")
-
+function alertonclick1 () {
+  alert("48.4634N, 123.3117W")
 
 }      
+
+function alertonclick2 () {
+  alert("48.4636N, 123.3119W")
+
+}
+
+
+function alertonclick3 () {
+  alert("48.4636N, 123.3210W")
+
+  }
+  
+   
